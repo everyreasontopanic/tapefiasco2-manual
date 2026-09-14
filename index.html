@@ -418,6 +418,9 @@ blockquote { color: rgba(235, 233, 224, 0.7); }
 }
 
 @media (max-width: 860px) {
+  /* about.css stacks the sidebar above the content here; on tablet/phone
+     drop it entirely and let the Contents block do the navigating */
+  .sidebar { display: none; }
   .contents-list { grid-auto-flow: row; grid-template-columns: 1fr; }
   .cover { min-height: 40vh; }
 }
